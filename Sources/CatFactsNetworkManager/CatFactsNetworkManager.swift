@@ -5,7 +5,7 @@ final public class CatFactsNetworkManager {
     private let baseURL = "https://catfact.ninja/"
     private let limit: Int
     
-    init(limit: Int) {
+    public init(limit: Int) {
         self.limit = limit
     }
     
