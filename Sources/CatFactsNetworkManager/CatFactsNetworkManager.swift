@@ -9,7 +9,7 @@ final public class CatFactsNetworkManager {
         self.limit = limit
     }
     
-    func fetchFacts<T: Decodable>(limit: Int, completion: @escaping (Result<T, Error>) -> Void) {
+    public func fetchFacts<T: Decodable>(limit: Int, completion: @escaping (Result<T, Error>) -> Void) {
         let urlStr = "\(baseURL)facts?limit=\(limit)"
         
         guard let url = URL(string: urlStr) else {
