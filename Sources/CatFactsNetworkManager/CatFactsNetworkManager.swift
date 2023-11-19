@@ -1,7 +1,7 @@
 
 import Foundation
 
-final class CatFactsNetworkManager {
+final public class CatFactsNetworkManager {
     private let baseURL = "https://catfact.ninja/"
     private let limit: Int
     
